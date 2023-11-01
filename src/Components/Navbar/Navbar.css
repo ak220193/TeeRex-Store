@@ -1,3 +1,7 @@
+#Navbar {
+  margin-top: -6rem;
+}
+
 #top-nav {
   display: flex;
   align-items: center;

@@ -45,13 +45,10 @@ const Navbar = () => {
       <div className="bottom-nav-container" id="bottom-nav">
         <ul className="menu-items">
           <li>
-            <a href="#home">Home</a>
+            <a href="/">Home</a>
           </li>
           <li>
             <a href="#Products">Products</a>
-          </li>
-          <li>
-            <a href="#Shop">Shop</a>
           </li>
           <li>
             <a href="#Deals">Deals</a>
@@ -59,6 +56,12 @@ const Navbar = () => {
           <li>
           <a href="#Contact">Contact</a>
         </li>
+        <li>
+        <a href="#Login">Login</a>
+      </li>
+      <li>
+      <a href="#Sign-up">Sign-Up</a>
+    </li>
         </ul>
       </div>
     </section>
