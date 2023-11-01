@@ -1,3 +1,104 @@
-.navabr {
-  color: red;
+#top-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 0;
+}
+.logo {
+  font-size: 1.5rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  padding: 0 1rem;
+  letter-spacing: 0.2rem;
+  background: var(--color-primary);
+  color: var(--color-white);
+  border-radius: var(--border-radius);
+  border-radius: 20px;
+  font-family: poppins;
+}
+#Search {
+  width: 555px;
+  border: var(--border-2);
+  border-radius: var(--border-radius-1);
+  padding: 0.5rem 1rem;
+  border-color: var(--color-light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 25px;
+}
+#Search input {
+  width: 100%;
+  display: block;
+  font-weight: 500;
+}
+.Search-icons {
+  color: var(--color-dark);
+  font-size: 1.5rem;
+}
+#Top-nav-icons {
+  display: flex;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+
+.fav-icon .cart-icon {
+  position: relative;
+}
+.fav-icon .cart-icon .count {
+  position: absolute;
+  top: -0.6rem;
+  right: -0.6rem;
+  background: var(--color-primary);
+  color: var(--color-white);
+  font-size: 0.8rem;
+  font-weight: 500;
+  line-height: 1;
+  padding: 2px 4px;
+  border-radius: var(--border-radius-3);
+}
+
+section hr {
+  background: var(--color-light);
+  height: 0.05rem;
+  width: 100%;
+  border: none;
+  outline: none;
+  margin-bottom: 0.5rem;
+}
+
+#bottom-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.menu-items {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 4.5rem;
+  text-transform: capitalize;
+  z-index: 111;
+  padding: 0.5 rem 0;
+}
+.menu-items li a {
+  font-weight: 600;
+  position: relative;
+}
+.menu-items li a:hover {
+  color: var(--color-primary);
+}
+.menu-items li a::after {
+  content: "";
+  position: absolute;
+  bottom: -0.5rem;
+  left: 0;
+  height: 0.15rem;
+  width: 0%;
+  border-radius: var(--border-radius-2);
+  background: var(--color-primary);
+  transition: var(--transition);
+}
+.menu-items li a:hover::after {
+  width: 100%;
 }

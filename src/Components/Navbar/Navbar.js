@@ -32,34 +32,34 @@ const Navbar = () => {
         <div className="Top-nav-icons" id="Top-nav-icons">
           <a href="/user">
             <RiUser3Fill />
-           
           </a>
-          <a href="/Fav">
-            <RiHeart3Fill />
-            
+          <a className="fav-icon" href="/Fav">
+            <RiHeart3Fill /> <span className="count">0</span>
           </a>
-          <a href="/cart">
-            <RiShoppingBag3Fill />
-            
+          <a  className="cart-icon" href="/cart">
+            <RiShoppingBag3Fill /> <span className="count">0</span>
           </a>
         </div>
-
-        <div className="bottom-nav-container" id="bottom-nav">
-          <ul className="menu-items">
-            <li>
-              <a href="#home">Home</a>
-            </li>
-            <li>
-              <a href="#Products">Products</a>
-            </li>
-            <li>
-              <a href="#Shop">Shop</a>
-            </li>
-            <li>
-              <a href="#Deals">Deals</a>
-            </li>
-          </ul>
-        </div>
+      </div>
+      <hr />
+      <div className="bottom-nav-container" id="bottom-nav">
+        <ul className="menu-items">
+          <li>
+            <a href="#home">Home</a>
+          </li>
+          <li>
+            <a href="#Products">Products</a>
+          </li>
+          <li>
+            <a href="#Shop">Shop</a>
+          </li>
+          <li>
+            <a href="#Deals">Deals</a>
+          </li>
+          <li>
+          <a href="#Contact">Contact</a>
+        </li>
+        </ul>
       </div>
     </section>
   );
