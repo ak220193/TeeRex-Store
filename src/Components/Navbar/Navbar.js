@@ -30,40 +30,25 @@ const Navbar = () => {
           </div>
         </div>
         <div className="Top-nav-icons" id="Top-nav-icons">
+          <div className="bottom-nav-container" id="bottom-nav">
+            <ul className="menu-items">
+              <li>
+                <a href="#Products">Products</a>
+              </li>
+            </ul>
+          </div>
           <a href="/user">
             <RiUser3Fill />
           </a>
           <a className="fav-icon" href="/Fav">
             <RiHeart3Fill /> <span className="count">0</span>
           </a>
-          <a  className="cart-icon" href="/cart">
+          <a className="cart-icon" href="/cart">
             <RiShoppingBag3Fill /> <span className="count">0</span>
           </a>
         </div>
       </div>
       <hr />
-      <div className="bottom-nav-container" id="bottom-nav">
-        <ul className="menu-items">
-          <li>
-            <a href="/">Home</a>
-          </li>
-          <li>
-            <a href="#Products">Products</a>
-          </li>
-          <li>
-            <a href="#Deals">Deals</a>
-          </li>
-          <li>
-          <a href="#Contact">Contact</a>
-        </li>
-        <li>
-        <a href="#Login">Login</a>
-      </li>
-      <li>
-      <a href="#Sign-up">Sign-Up</a>
-    </li>
-        </ul>
-      </div>
     </section>
   );
 };
